@@ -5,278 +5,409 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HyperDrive | Garagem Suprema</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <section class="intro-section">
-        <div class="intro-content">
-            <div class="brand-badge">Estúdio de Performance</div>
-            <h1>Hyper<span>Drive</span></h1>
-            <p class="tagline">Onde a física é desafiada e a engenharia se torna arte.</p>
-            <div class="divider"></div>
-            <p class="description">
-                Bem-vindo ao santuário digital dos entusiastas por velocidade. Preparamos uma curadoria implacável 
-                das máquinas mais rápidas, caras e desejadas do planeta. Explore os dados técnicos de pista, compare a 
-                cavalaria dessas lendas modernas e deixe o seu veredito clicando no coração para favoritar o seu monstro favorito.
-            </p>
+    <div id="splash-screen">
+        <div class="splash-content">
+            <span class="splash-subtitle">SISTEMA PRONTO</span>
+            <h1 class="splash-title">HYPER<span>DRIVE</span></h1>
+            <p class="splash-desc">Prepare-se para desafiar a física.</p>
+            <button id="start-btn">
+                <div class="btn-border"></div>
+                <div class="btn-glow"></div>
+                <span class="btn-text">START ENGINE</span>
+            </button>
         </div>
-    </section>
-
-    <div class="container">
-
-        <div class="car-card">
-            <div class="image-container">
-                <span class="badge">Track Toy</span>
-                <img class="car-image" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800&auto=format&fit=crop" alt="Porsche 911 GT3 RS">
-            </div>
-            <div class="car-info">
-                <div class="car-header">
-                    <h2 class="car-name">Porsche 911 GT3 RS</h2>
-                    <label class="like-btn">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </label>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-box motor-spec">
-                        <div class="spec-label">Motor</div>
-                        <div class="spec-value">4.0L Boxer 6 Cilindros Aspirado</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Cavalaria</div>
-                        <div class="spec-value">525 cv</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Torque</div>
-                        <div class="spec-value">465 Nm</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Peso</div>
-                        <div class="spec-value">1.450 kg</div>
-                    </div>
-                    <div class="spec-box speed-spec">
-                        <div class="spec-label">0 a 100 km/h</div>
-                        <div class="spec-value">3,2s</div>
-                    </div>
-                    <div class="spec-box price-spec">
-                        <div class="spec-label">Estimativa de Valor</div>
-                        <div class="spec-value">R$ 1.900.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="car-card">
-            <div class="image-container">
-                <span class="badge">Híbrido</span>
-                <img class="car-image" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=800&auto=format&fit=crop" alt="Ferrari SF90 Stradale">
-            </div>
-            <div class="car-info">
-                <div class="car-header">
-                    <h2 class="car-name">Ferrari SF90</h2>
-                    <label class="like-btn">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </label>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-box motor-spec">
-                        <div class="spec-label">Motor</div>
-                        <div class="spec-value">4.0L V8 Biturbo + 3 Elétricos</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Cavalaria</div>
-                        <div class="spec-value">1.000 cv</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Torque</div>
-                        <div class="spec-value">800 Nm</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Peso</div>
-                        <div class="spec-value">1.570 kg</div>
-                    </div>
-                    <div class="spec-box speed-spec">
-                        <div class="spec-label">0 a 100 km/h</div>
-                        <div class="spec-value">2,5s</div>
-                    </div>
-                    <div class="spec-box price-spec">
-                        <div class="spec-label">Estimativa de Valor</div>
-                        <div class="spec-value">R$ 6.900.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="car-card">
-            <div class="image-container">
-                <span class="badge">Elétrico</span>
-                <img class="car-image" src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=800&auto=format&fit=crop" alt="Tesla Model S Plaid">
-            </div>
-            <div class="car-info">
-                <div class="car-header">
-                    <h2 class="car-name">Tesla Model S Plaid</h2>
-                    <label class="like-btn">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </label>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-box motor-spec">
-                        <div class="spec-label">Motor</div>
-                        <div class="spec-value">Três Motores Elétricos (Tri-Motor)</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Cavalaria</div>
-                        <div class="spec-value">1.020 cv</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Torque</div>
-                        <div class="spec-value">1.420 Nm</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Peso</div>
-                        <div class="spec-value">2.162 kg</div>
-                    </div>
-                    <div class="spec-box speed-spec">
-                        <div class="spec-label">0 a 100 km/h</div>
-                        <div class="spec-value">2,1s</div>
-                    </div>
-                    <div class="spec-box price-spec">
-                        <div class="spec-label">Estimativa de Valor</div>
-                        <div class="spec-value">R$ 750.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="car-card">
-            <div class="image-container">
-                <span class="badge">V12 Puro</span>
-                <img class="car-image" src="https://images.unsplash.com/photo-1625217527288-93919c99650a?q=80&w=800&auto=format&fit=crop" alt="Lamborghini Aventador">
-            </div>
-            <div class="car-info">
-                <div class="car-header">
-                    <h2 class="car-name">Lambo Aventador LP</h2>
-                    <label class="like-btn">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </label>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-box motor-spec">
-                        <div class="spec-label">Motor</div>
-                        <div class="spec-value">6.5L V12 Aspirado de Altas Rotações</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Cavalaria</div>
-                        <div class="spec-value">700 cv</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Torque</div>
-                        <div class="spec-value">690 Nm</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Peso</div>
-                        <div class="spec-value">1.575 kg</div>
-                    </div>
-                    <div class="spec-box speed-spec">
-                        <div class="spec-label">0 a 100 km/h</div>
-                        <div class="spec-value">2,9s</div>
-                    </div>
-                    <div class="spec-box price-spec">
-                        <div class="spec-label">Estimativa de Valor</div>
-                        <div class="spec-value">R$ 4.200.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="car-card">
-            <div class="image-container">
-                <span class="badge">Super Sedan</span>
-                <img class="car-image" src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?q=80&w=800&auto=format&fit=crop" alt="Audi RS7">
-            </div>
-            <div class="car-info">
-                <div class="car-header">
-                    <h2 class="car-name">Audi RS7 Sportback</h2>
-                    <label class="like-btn">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </label>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-box motor-spec">
-                        <div class="spec-label">Motor</div>
-                        <div class="spec-value">4.0L V8 Biturbo TFSI MHEV</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Cavalaria</div>
-                        <div class="spec-value">600 cv</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Torque</div>
-                        <div class="spec-value">800 Nm</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Peso</div>
-                        <div class="spec-value">2.065 kg</div>
-                    </div>
-                    <div class="spec-box speed-spec">
-                        <div class="spec-label">0 a 100 km/h</div>
-                        <div class="spec-value">3,6s</div>
-                    </div>
-                    <div class="spec-box price-spec">
-                        <div class="spec-label">Estimativa de Valor</div>
-                        <div class="spec-value">R$ 1.150.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="car-card">
-            <div class="image-container">
-                <span class="badge">Hipercarro</span>
-                <img class="car-image" src="https://images.unsplash.com/photo-1600706432502-75a0e2b748f8?q=80&w=800&auto=format&fit=crop" alt="Bugatti Chiron">
-            </div>
-            <div class="car-info">
-                <div class="car-header">
-                    <h2 class="car-name">Bugatti Chiron</h2>
-                    <label class="like-btn">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </label>
-                </div>
-                <div class="specs-grid">
-                    <div class="spec-box motor-spec">
-                        <div class="spec-label">Motor</div>
-                        <div class="spec-value">8.0L W16 Quad-Turbo Carbon</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Cavalaria</div>
-                        <div class="spec-value">1.500 cv</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Torque</div>
-                        <div class="spec-value">1.600 Nm</div>
-                    </div>
-                    <div class="spec-box">
-                        <div class="spec-label">Peso</div>
-                        <div class="spec-value">1.945 kg</div>
-                    </div>
-                    <div class="spec-box speed-spec">
-                        <div class="spec-label">0 a 100 km/h</div>
-                        <div class="spec-value">2,3s</div>
-                    </div>
-                    <div class="spec-box price-spec">
-                        <div class="spec-label">Estimativa de Valor</div>
-                        <div class="spec-value">R$ 25.000.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
+    <main id="main-content" class="hidden">
+        <section class="intro-section">
+            <div class="intro-content">
+                <div class="brand-badge">Estúdio de Performance</div>
+                <h1>Hyper<span>Drive</span></h1>
+                <p class="tagline">Onde a física é desafiada e a engenharia se torna arte.</p>
+                <div class="divider"></div>
+                <p class="description">
+                    Explore os dados técnicos de pista, favorite os seus monstros favoritos e envie qualquer máquina direto para a nossa oficina exclusiva de customização no fim da página.
+                </p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="car-card" data-id="porsche" data-base-cv="525" data-base-torque="465">
+                <div class="image-container">
+                    <span class="badge">Track Toy</span>
+                    <img class="car-image" src="https://images.unsplash.com/photo-1706536034150-1372cf9fb0ef?q=80&w=800&auto=format&fit=crop" alt="Porsche 911 GT3 RS">
+                </div>
+                <div class="car-info">
+                    <div class="car-header">
+                        <h2 class="car-name">Porsche 911 GT3 RS</h2>
+                        <label class="like-btn">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </label>
+                    </div>
+                    <div class="specs-grid">
+                        <div class="spec-box motor-spec"><div class="spec-label">Motor</div><div class="spec-value">4.0L Boxer 6 Cil. Aspirado</div></div>
+                        <div class="spec-box"><div class="spec-label">Cavalaria</div><div class="spec-value card-cv">525 cv</div></div>
+                        <div class="spec-box"><div class="spec-label">Torque</div><div class="spec-value card-torque">465 Nm</div></div>
+                        <div class="spec-box"><div class="spec-label">Peso</div><div class="spec-value">1.450 kg</div></div>
+                        <div class="spec-box speed-spec"><div class="spec-label">0 a 100 km/h</div><div class="spec-value">3,2s</div></div>
+                        <div class="spec-box price-spec"><div class="spec-label">Estimativa</div><div class="spec-value">R$ 1.9 M</div></div>
+                    </div>
+                    <button class="tune-trigger-btn" onclick="loadToWorkshop('porsche')">Configurar na Oficina</button>
+                </div>
+            </div>
+
+            <div class="car-card" data-id="ferrari" data-base-cv="1000" data-base-torque="800">
+                <div class="image-container">
+                    <span class="badge">Híbrido</span>
+                    <img class="car-image" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Ferrari SF90">
+                </div>
+                <div class="car-info">
+                    <div class="car-header">
+                        <h2 class="car-name">Ferrari SF90</h2>
+                        <label class="like-btn">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </label>
+                    </div>
+                    <div class="specs-grid">
+                        <div class="spec-box motor-spec"><div class="spec-label">Motor</div><div class="spec-value">4.0L V8 Biturbo + Elétricos</div></div>
+                        <div class="spec-box"><div class="spec-label">Cavalaria</div><div class="spec-value card-cv">1.000 cv</div></div>
+                        <div class="spec-box"><div class="spec-label">Torque</div><div class="spec-value card-torque">800 Nm</div></div>
+                        <div class="spec-box"><div class="spec-label">Peso</div><div class="spec-value">1.570 kg</div></div>
+                        <div class="spec-box speed-spec"><div class="spec-label">0 a 100 km/h</div><div class="spec-value">2,5s</div></div>
+                        <div class="spec-box price-spec"><div class="spec-label">Estimativa</div><div class="spec-value">R$ 6.9 M</div></div>
+                    </div>
+                    <button class="tune-trigger-btn" onclick="loadToWorkshop('ferrari')">Configurar na Oficina</button>
+                </div>
+            </div>
+
+            <div class="car-card" data-id="tesla" data-base-cv="1020" data-base-torque="1420">
+                <div class="image-container">
+                    <span class="badge">Elétrico</span>
+                    <img class="car-image" src="https://images.unsplash.com/photo-1614200187524-dc4b8fa23938?q=80&w=800&auto=format&fit=crop" alt="Tesla Model S Plaid">
+                </div>
+                <div class="car-info">
+                    <div class="car-header">
+                        <h2 class="car-name">Tesla Model S Plaid</h2>
+                        <label class="like-btn">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </label>
+                    </div>
+                    <div class="specs-grid">
+                        <div class="spec-box motor-spec"><div class="spec-label">Motor</div><div class="spec-value">Três Motores Elétricos</div></div>
+                        <div class="spec-box"><div class="spec-label">Cavalaria</div><div class="spec-value card-cv">1.020 cv</div></div>
+                        <div class="spec-box"><div class="spec-label">Torque</div><div class="spec-value card-torque">1.420 Nm</div></div>
+                        <div class="spec-box"><div class="spec-label">Peso</div><div class="spec-value">2.162 kg</div></div>
+                        <div class="spec-box speed-spec"><div class="spec-label">0 a 100 km/h</div><div class="spec-value">2,1s</div></div>
+                        <div class="spec-box price-spec"><div class="spec-label">Estimativa</div><div class="spec-value">R$ 750k</div></div>
+                    </div>
+                    <button class="tune-trigger-btn" onclick="loadToWorkshop('tesla')">Configurar na Oficina</button>
+                </div>
+            </div>
+
+            <div class="car-card" data-id="lambo" data-base-cv="700" data-base-torque="690">
+                <div class="image-container">
+                    <span class="badge">V12 Puro</span>
+                    <img class="car-image" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=800&auto=format&fit=crop" alt="Lamborghini Aventador">
+                </div>
+                <div class="car-info">
+                    <div class="car-header">
+                        <h2 class="car-name">Lambo Aventador</h2>
+                        <label class="like-btn">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </label>
+                    </div>
+                    <div class="specs-grid">
+                        <div class="spec-box motor-spec"><div class="spec-label">Motor</div><div class="spec-value">6.5L V12 Aspirado</div></div>
+                        <div class="spec-box"><div class="spec-label">Cavalaria</div><div class="spec-value card-cv">700 cv</div></div>
+                        <div class="spec-box"><div class="spec-label">Torque</div><div class="spec-value card-torque">690 Nm</div></div>
+                        <div class="spec-box"><div class="spec-label">Peso</div><div class="spec-value">1.575 kg</div></div>
+                        <div class="spec-box speed-spec"><div class="spec-label">0 a 100 km/h</div><div class="spec-value">2,9s</div></div>
+                        <div class="spec-box price-spec"><div class="spec-label">Estimativa</div><div class="spec-value">R$ 4.2 M</div></div>
+                    </div>
+                    <button class="tune-trigger-btn" onclick="loadToWorkshop('lambo')">Configurar na Oficina</button>
+                </div>
+            </div>
+
+            <div class="car-card" data-id="audi" data-base-cv="600" data-base-torque="800">
+                <div class="image-container">
+                    <span class="badge">Super Sedan</span>
+                    <img class="car-image" src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800&auto=format&fit=crop" alt="Audi RS7">
+                </div>
+                <div class="car-info">
+                    <div class="car-header">
+                        <h2 class="car-name">Audi RS7 Sportback</h2>
+                        <label class="like-btn">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </label>
+                    </div>
+                    <div class="specs-grid">
+                        <div class="spec-box motor-spec"><div class="spec-label">Motor</div><div class="spec-value">4.0L V8 Biturbo TFSI</div></div>
+                        <div class="spec-box"><div class="spec-label">Cavalaria</div><div class="spec-value card-cv">600 cv</div></div>
+                        <div class="spec-box"><div class="spec-label">Torque</div><div class="spec-value card-torque">800 Nm</div></div>
+                        <div class="spec-box"><div class="spec-label">Peso</div><div class="spec-value">2.065 kg</div></div>
+                        <div class="spec-box speed-spec"><div class="spec-label">0 a 100 km/h</div><div class="spec-value">3,6s</div></div>
+                        <div class="spec-box price-spec"><div class="spec-label">Estimativa</div><div class="spec-value">R$ 1.1 M</div></div>
+                    </div>
+                    <button class="tune-trigger-btn" onclick="loadToWorkshop('audi')">Configurar na Oficina</button>
+                </div>
+            </div>
+
+            <div class="car-card" data-id="bugatti" data-base-cv="1500" data-base-torque="1600">
+                <div class="image-container">
+                    <span class="badge">Hipercarro</span>
+                    <img class="car-image" src="https://images.unsplash.com/photo-1600706432502-75a0e2b748f8?q=80&w=800&auto=format&fit=crop" alt="Bugatti Chiron">
+                </div>
+                <div class="car-info">
+                    <div class="car-header">
+                        <h2 class="car-name">Bugatti Chiron</h2>
+                        <label class="like-btn">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </label>
+                    </div>
+                    <div class="specs-grid">
+                        <div class="spec-box motor-spec"><div class="spec-label">Motor</div><div class="spec-value">8.0L W16 Quad-Turbo</div></div>
+                        <div class="spec-box"><div class="spec-label">Cavalaria</div><div class="spec-value card-cv">1.500 cv</div></div>
+                        <div class="spec-box"><div class="spec-label">Torque</div><div class="spec-value card-torque">1.600 Nm</div></div>
+                        <div class="spec-box"><div class="spec-label">Peso</div><div class="spec-value">1.945 kg</div></div>
+                        <div class="spec-box speed-spec"><div class="spec-label">0 a 100 km/h</div><div class="spec-value">2,3s</div></div>
+                        <div class="spec-box price-spec"><div class="spec-label">Estimativa</div><div class="spec-value">R$ 25 M</div></div>
+                    </div>
+                    <button class="tune-trigger-btn" onclick="loadToWorkshop('bugatti')">Configurar na Oficina</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="workshop-section" class="workshop-section">
+            <div class="intro-content">
+                <div class="brand-badge" style="border-color: #00ffcc; color: #00ffcc;">Hyper Custom Studio</div>
+                <h2>Oficina de <span>Performance</span></h2>
+                <p class="tagline">Selecione uma máquina acima para liberar o menu de upgrades modificados.</p>
+            </div>
+
+            <div class="workshop-hub">
+                <div class="preview-panel">
+                    <div id="neon-ground" class="neon-glow-effect"></div>
+                    <img id="workshop-img" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Preview">
+                    <div class="active-mods-tags" id="active-tags">
+                        </div>
+                </div>
+
+                <div class="controls-panel">
+                    <h3 id="workshop-car-name">Nenhum Carro Selecionado</h3>
+                    <p class="workshop-status">Status do Projeto: <span id="project-status">Aguardando Ordem...</span></p>
+
+                    <div class="control-group">
+                        <h4>1. Pintura Customizada (Envelopamento)</h4>
+                        <div class="color-options">
+                            <button class="color-dot active" style="background: transparent; border: 2px solid #fff;" onclick="changePaint('none', '#ffffff')" title="Original"></button>
+                            <button class="color-dot" style="background: #ff2a54;" onclick="changePaint('hue-rotate(320deg) saturate(1.5)', '#ff2a54')" title="Rojo Corsa"></button>
+                            <button class="color-dot" style="background: #00ffcc;" onclick="changePaint('hue-rotate(140deg) saturate(2)', '#00ffcc')" title="Verde Krypton"></button>
+                            <button class="color-dot" style="background: #2563eb;" onclick="changePaint('hue-rotate(200deg) contrast(1.2)', '#2563eb')" title="Azul Nitro"></button>
+                            <button class="color-dot" style="background: #111; border: 1px solid #444;" onclick="changePaint('grayscale(1) brightness(0.4)', '#555')" title="Preto Fosco"></button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <h4>2. Performance & Mecânica</h4>
+                        <label class="tune-checkbox">
+                            <input type="checkbox" id="mod-stage2" onchange="applyUpgrades()">
+                            <span class="checkmark"></span>
+                            Remap de Injeção Stage 2 (+120 cv)
+                        </label>
+                        <label class="tune-checkbox">
+                            <input type="checkbox" id="mod-exhaust" onchange="applyUpgrades()">
+                            <span class="checkmark"></span>
+                            Escapamento de Titânio (+40 cv)
+                        </label>
+                    </div>
+
+                    <div class="control-group">
+                        <h4>3. Estética Underground</h4>
+                        <label class="tune-checkbox">
+                            <input type="checkbox" id="mod-neon" onchange="applyUpgrades()">
+                            <span class="checkmark"></span>
+                            Neon Subaquático Ativo
+                        </label>
+                        <label class="tune-checkbox">
+                            <input type="checkbox" id="mod-spoiler" onchange="applyUpgrades()">
+                            <span class="checkmark"></span>
+                            Aerofólio em Fibra de Carbono GT
+                        </label>
+                    </div>
+
+                    <div class="live-stats">
+                        <div class="stat-item">
+                            <span>Nova Cavalaria</span>
+                            <strong id="workshop-cv">---</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Novo Torque</span>
+                            <strong id="workshop-torque">---</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const startBtn = document.getElementById('start-btn');
+        const splashScreen = document.getElementById('splash-screen');
+        const mainContent = document.getElementById('main-content');
+
+        // Banco de dados dos Carros para a Oficina
+        const carDatabase = {
+            porsche: { name: "Porsche 911 GT3 RS", img: "https://images.unsplash.com/photo-1706536034150-1372cf9fb0ef?q=80&w=800", cv: 525, torque: 465 },
+            ferrari: { name: "Ferrari SF90", img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800", cv: 1000, torque: 800 },
+            tesla: { name: "Tesla Model S Plaid", img: "https://images.unsplash.com/photo-1614200187524-dc4b8fa23938?q=80&w=800", cv: 1020, torque: 1420 },
+            lambo: { name: "Lambo Aventador", img: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=800", cv: 700, torque: 690 },
+            audi: { name: "Audi RS7 Sportback", img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800", cv: 600, torque: 800 },
+            bugatti: { name: "Bugatti Chiron", img: "https://images.unsplash.com/photo-1600706432502-75a0e2b748f8?q=80&w=800", cv: 1500, torque: 1600 }
+        };
+
+        let currentCarId = null;
+
+        function playEngineSound() {
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!AudioContext) return;
+            const ctx = new AudioContext();
+            const osc1 = ctx.createOscillator(), osc2 = ctx.createOscillator();
+            const gainNode = ctx.createGain(), filter = ctx.createBiquadFilter();
+
+            osc1.type = 'sawtooth'; osc2.type = 'triangle';
+            osc1.frequency.setValueAtTime(40, ctx.currentTime);
+            osc2.frequency.setValueAtTime(42, ctx.currentTime);
+            
+            osc1.frequency.exponentialRampToValueAtTime(180, ctx.currentTime + 0.3);
+            osc2.frequency.exponentialRampToValueAtTime(185, ctx.currentTime + 0.3);
+            osc1.frequency.exponentialRampToValueAtTime(70, ctx.currentTime + 1.2);
+            osc2.frequency.exponentialRampToValueAtTime(73, ctx.currentTime + 1.2);
+            
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(250, ctx.currentTime);
+            filter.frequency.exponentialRampToValueAtTime(600, ctx.currentTime + 0.3);
+            filter.frequency.exponentialRampToValueAtTime(200, ctx.currentTime + 1.2);
+
+            gainNode.gain.setValueAtTime(0.01, ctx.currentTime);
+            gainNode.gain.linearRampToValueAtTime(0.8, ctx.currentTime + 0.1);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.5);
+
+            osc1.connect(filter); osc2.connect(filter);
+            filter.connect(gainNode); gainNode.connect(ctx.destination);
+            osc1.start(ctx.currentTime); osc2.start(ctx.currentTime);
+            osc1.stop(ctx.currentTime + 1.6); osc2.stop(ctx.currentTime + 1.6);
+        }
+
+        startBtn.addEventListener('click', () => {
+            playEngineSound();
+            startBtn.classList.add('ignited');
+            setTimeout(() => {
+                splashScreen.classList.add('fade-out');
+                mainContent.classList.remove('hidden');
+                mainContent.classList.add('fade-in');
+                setTimeout(() => { splashScreen.style.display = 'none'; }, 800);
+            }, 400);
+        });
+
+        // Carregar carro para a Oficina
+        function loadToWorkshop(carId) {
+            currentCarId = carId;
+            const car = carDatabase[carId];
+            
+            document.getElementById('workshop-car-name').innerText = car.name;
+            document.getElementById('workshop-img').src = car.img;
+            document.getElementById('project-status').innerText = "Em Modificação...";
+            document.getElementById('project-status').style.color = "#ffb703";
+            
+            // Reseta Checkboxes ao trocar de carro
+            document.getElementById('mod-stage2').checked = false;
+            document.getElementById('mod-exhaust').checked = false;
+            document.getElementById('mod-neon').checked = false;
+            document.getElementById('mod-spoiler').checked = false;
+            
+            // Reseta Filtros Visuais
+            changePaint('none', '#ffffff');
+            
+            applyUpgrades();
+
+            // Rola suavemente até a oficina
+            document.getElementById('workshop-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mudar cor da pintura via Filtros Avançados CSS
+        function changePaint(filterCSS, neonColor) {
+            const img = document.getElementById('workshop-img');
+            img.style.filter = filterCSS;
+            
+            // Trata as bordas dos botões de cores
+            document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Salva a cor atual do Neon para sincronizar se o checkbox estiver ativo
+            img.setAttribute('data-paint-neon', neonColor);
+            if(document.getElementById('mod-neon').checked) {
+                document.getElementById('neon-ground').style.boxShadow = `0 15px 40px 15px ${neonColor}`;
+            }
+        }
+
+        // Calcula atualizações de cavalaria e badges estéticos
+        function applyUpgrades() {
+            if (!currentCarId) return;
+
+            const car = carDatabase[currentCarId];
+            let finalCv = car.cv;
+            let finalTorque = car.torque;
+            let tagsHTML = '';
+
+            // Modificações Mecânicas
+            if (document.getElementById('mod-stage2').checked) {
+                finalCv += 120;
+                finalTorque += 150;
+                tagsHTML += '<span class="mod-tag spec-boost">STAGE 2</span>';
+            }
+            if (document.getElementById('mod-exhaust').checked) {
+                finalCv += 40;
+                finalTorque += 50;
+                tagsHTML += '<span class="mod-tag spec-boost">TITANIUM OUT</span>';
+            }
+
+            // Modificações Visuais
+            if (document.getElementById('mod-spoiler').checked) {
+                tagsHTML += '<span class="mod-tag aero-tag">AERO CARBON GT</span>';
+            }
+            
+            const neonCheck = document.getElementById('mod-neon').checked;
+            const neonGround = document.getElementById('neon-ground');
+            if (neonCheck) {
+                const activeColor = document.getElementById('workshop-img').getAttribute('data-paint-neon') || '#ff4500';
+                neonGround.style.boxShadow = `0 15px 40px 15px ${activeColor}`;
+                tagsHTML += '<span class="mod-tag neon-tag">UNDERGLOW NEON</span>';
+            } else {
+                neonGround.style.boxShadow = 'none';
+            }
+
+            // Atualiza o painel da Oficina
+            document.getElementById('workshop-cv').innerText = `${finalCv} cv`;
+            document.getElementById('workshop-torque').innerText = `${finalTorque} Nm`;
+            document.getElementById('active-tags').innerHTML = tagsHTML;
+
+            // Altera também em tempo real no Card do Showroom lá em cima!
+            const card = document.querySelector(`.car-card[data-id="${currentCarId}"]`);
+            if (card) {
+                card.querySelector('.card-cv').innerText = `${finalCv} cv`;
+                card.querySelector('.card-torque').innerText = `${finalTorque} Nm`;
+            }
+        }
+    </script>
 </body>
 </html>
