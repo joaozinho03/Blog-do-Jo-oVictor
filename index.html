@@ -39,7 +39,7 @@
             <div class="car-card" data-id="porsche" data-base-cv="525" data-base-torque="465">
                 <div class="image-container">
                     <span class="badge">Track Toy</span>
-                    <img class="car-image" src="https://images.unsplash.com/photo-1706536034150-1372cf9fb0ef?q=80&w=800&auto=format&fit=crop" alt="Porsche 911 GT3 RS">
+                    <img class="car-image" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800&auto=format&fit=crop" alt="Porsche 911 GT3 RS">
                 </div>
                 <div class="car-info">
                     <div class="car-header">
@@ -64,7 +64,7 @@
             <div class="car-card" data-id="ferrari" data-base-cv="1000" data-base-torque="800">
                 <div class="image-container">
                     <span class="badge">Híbrido</span>
-                    <img class="car-image" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Ferrari SF90">
+                    <img class="car-image" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=800&auto=format&fit=crop" alt="Ferrari SF90">
                 </div>
                 <div class="car-info">
                     <div class="car-header">
@@ -89,7 +89,7 @@
             <div class="car-card" data-id="tesla" data-base-cv="1020" data-base-torque="1420">
                 <div class="image-container">
                     <span class="badge">Elétrico</span>
-                    <img class="car-image" src="https://images.unsplash.com/photo-1614200187524-dc4b8fa23938?q=80&w=800&auto=format&fit=crop" alt="Tesla Model S Plaid">
+                    <img class="car-image" src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=800&auto=format&fit=crop" alt="Tesla Model S Plaid">
                 </div>
                 <div class="car-info">
                     <div class="car-header">
@@ -114,7 +114,7 @@
             <div class="car-card" data-id="lambo" data-base-cv="700" data-base-torque="690">
                 <div class="image-container">
                     <span class="badge">V12 Puro</span>
-                    <img class="car-image" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=800&auto=format&fit=crop" alt="Lamborghini Aventador">
+                    <img class="car-image" src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=800&auto=format&fit=crop" alt="Lamborghini Aventador">
                 </div>
                 <div class="car-info">
                     <div class="car-header">
@@ -139,7 +139,7 @@
             <div class="car-card" data-id="audi" data-base-cv="600" data-base-torque="800">
                 <div class="image-container">
                     <span class="badge">Super Sedan</span>
-                    <img class="car-image" src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800&auto=format&fit=crop" alt="Audi RS7">
+                    <img class="car-image" src="https://images.unsplash.com/photo-1606225457115-9b0de873c5db?q=80&w=800&auto=format&fit=crop" alt="Audi RS7">
                 </div>
                 <div class="car-info">
                     <div class="car-header">
@@ -197,7 +197,7 @@
             <div class="workshop-hub">
                 <div class="preview-panel">
                     <div id="neon-ground" class="neon-glow-effect"></div>
-                    <img id="workshop-img" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Preview">
+                    <img id="workshop-img" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800&auto=format&fit=crop" alt="Preview">
                     <div class="active-mods-tags" id="active-tags">
                         </div>
                 </div>
@@ -265,13 +265,13 @@
         const splashScreen = document.getElementById('splash-screen');
         const mainContent = document.getElementById('main-content');
 
-        // Banco de dados dos Carros para a Oficina
+        // Banco de dados dos Carros para a Oficina atualizado com os novos links de imagem
         const carDatabase = {
-            porsche: { name: "Porsche 911 GT3 RS", img: "https://images.unsplash.com/photo-1706536034150-1372cf9fb0ef?q=80&w=800", cv: 525, torque: 465 },
-            ferrari: { name: "Ferrari SF90", img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800", cv: 1000, torque: 800 },
-            tesla: { name: "Tesla Model S Plaid", img: "https://images.unsplash.com/photo-1614200187524-dc4b8fa23938?q=80&w=800", cv: 1020, torque: 1420 },
-            lambo: { name: "Lambo Aventador", img: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=800", cv: 700, torque: 690 },
-            audi: { name: "Audi RS7 Sportback", img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=800", cv: 600, torque: 800 },
+            porsche: { name: "Porsche 911 GT3 RS", img: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800", cv: 525, torque: 465 },
+            ferrari: { name: "Ferrari SF90", img: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=800", cv: 1000, torque: 800 },
+            tesla: { name: "Tesla Model S Plaid", img: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=800", cv: 1020, torque: 1420 },
+            lambo: { name: "Lambo Aventador", img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=800", cv: 700, torque: 690 },
+            audi: { name: "Audi RS7 Sportback", img: "https://images.unsplash.com/photo-1606225457115-9b0de873c5db?q=80&w=800", cv: 600, torque: 800 },
             bugatti: { name: "Bugatti Chiron", img: "https://images.unsplash.com/photo-1600706432502-75a0e2b748f8?q=80&w=800", cv: 1500, torque: 1600 }
         };
 
@@ -319,7 +319,6 @@
             }, 400);
         });
 
-        // Carregar carro para a Oficina
         function loadToWorkshop(carId) {
             currentCarId = carId;
             const car = carDatabase[carId];
@@ -329,38 +328,33 @@
             document.getElementById('project-status').innerText = "Em Modificação...";
             document.getElementById('project-status').style.color = "#ffb703";
             
-            // Reseta Checkboxes ao trocar de carro
             document.getElementById('mod-stage2').checked = false;
             document.getElementById('mod-exhaust').checked = false;
             document.getElementById('mod-neon').checked = false;
             document.getElementById('mod-spoiler').checked = false;
             
-            // Reseta Filtros Visuais
             changePaint('none', '#ffffff');
             
             applyUpgrades();
 
-            // Rola suavemente até a oficina
             document.getElementById('workshop-section').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Mudar cor da pintura via Filtros Avançados CSS
         function changePaint(filterCSS, neonColor) {
             const img = document.getElementById('workshop-img');
             img.style.filter = filterCSS;
             
-            // Trata as bordas dos botões de cores
-            document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('active'));
-            event.target.classList.add('active');
+            if (event && event.target && event.target.classList) {
+                document.querySelectorAll('.color-dot').forEach(dot => dot.classList.remove('active'));
+                event.target.classList.add('active');
+            }
 
-            // Salva a cor atual do Neon para sincronizar se o checkbox estiver ativo
             img.setAttribute('data-paint-neon', neonColor);
             if(document.getElementById('mod-neon').checked) {
                 document.getElementById('neon-ground').style.boxShadow = `0 15px 40px 15px ${neonColor}`;
             }
         }
 
-        // Calcula atualizações de cavalaria e badges estéticos
         function applyUpgrades() {
             if (!currentCarId) return;
 
@@ -369,7 +363,6 @@
             let finalTorque = car.torque;
             let tagsHTML = '';
 
-            // Modificações Mecânicas
             if (document.getElementById('mod-stage2').checked) {
                 finalCv += 120;
                 finalTorque += 150;
@@ -381,7 +374,6 @@
                 tagsHTML += '<span class="mod-tag spec-boost">TITANIUM OUT</span>';
             }
 
-            // Modificações Visuais
             if (document.getElementById('mod-spoiler').checked) {
                 tagsHTML += '<span class="mod-tag aero-tag">AERO CARBON GT</span>';
             }
@@ -396,12 +388,10 @@
                 neonGround.style.boxShadow = 'none';
             }
 
-            // Atualiza o painel da Oficina
             document.getElementById('workshop-cv').innerText = `${finalCv} cv`;
             document.getElementById('workshop-torque').innerText = `${finalTorque} Nm`;
             document.getElementById('active-tags').innerHTML = tagsHTML;
 
-            // Altera também em tempo real no Card do Showroom lá em cima!
             const card = document.querySelector(`.car-card[data-id="${currentCarId}"]`);
             if (card) {
                 card.querySelector('.card-cv').innerText = `${finalCv} cv`;
